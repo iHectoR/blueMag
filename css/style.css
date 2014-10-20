@@ -3,11 +3,12 @@ body {
 	color: #475054;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
+	line-height: 1.5;
 }
-a{
-	-webkit-transition: color .2s ease-in;
-	-moz-transition: color .2s ease-in;
-	transition: color .2s ease-in;
+a, a .fa {
+	-webkit-transition: color .2s ease-in, background-color .2s ease-in, text-decoration .8s ease-in;
+	-moz-transition: color .2s ease-in, background-color .2s ease-in, text-decoration .8s ease-in;
+	transition: color .2s ease-in, background-color .2s ease-in, text-decoration .8s ease-in;
 }
 .wrapper {
 	width: 930px;
@@ -20,23 +21,28 @@ a{
 .float-right {
 	float: right;
 }
-
+.box{
+	background: #fff;
+}
 .grid{
 	margin-left: -15px;
 }
 .grid > [class*="col-"]{
 	float: left;
 	padding-left: 15px;
+
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 .grid.no-pad{
 	margin-left: 0;
 }
 .grid.no-pad > [class*="col-"] {
 	padding-left: 0;
 }
+
 .grid > .col-1-2{
 	width: 50%;
 }
@@ -47,11 +53,15 @@ a{
 	width: 66.66666%;
 }
 
+.row {
+	margin-bottom: 15px;
+}
 
 .header-top{
 	line-height: 60px;
 	background-color: #fff;
 }
+
 .header-top a{
 	display: block;
 }
@@ -64,9 +74,9 @@ a{
 }
 .main-menu li{
 	float: left;
-
 }
-.main-menu li a{
+.main-menu li a,
+.side-menu li a{
 	display: block;
 	padding: 0 25px;
 	color: inherit;
@@ -93,8 +103,6 @@ a{
 }
 .socials li{
 	float: left;
-
-
 }
 .socials li a{
 	padding: 0 10px ;
@@ -106,4 +114,65 @@ a{
 
 .user-cont a:hover{
 	color: #56ccc8;
+}
+
+/* Headr Top */
+.side-menu {
+	background: #ffffff;
+}
+
+.side-menu li a{
+	border-bottom: 1px solid #E1E5E7;
+	line-height: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.side-menu li a:hover{
+	background-color: #56CCC8;
+	color: #ffffff;
+}
+.side-menu li a:active{
+	background-color: #263A54;
+}
+
+.side-menu li a .fa{
+	color: #c5cdd1;
+	font-size: 21px;
+	margin-right: 26px;
+	min-width: 22px;
+}
+.side-menu li a:hover .fa{
+	color: #ffffff;
+}
+.contacts{
+	background-color: #C5CDD1;
+	padding: 30px 20px;
+	color: #ffffff;
+	box-shadow:inset 0 1px 1px  rgba(0,0,0,.1);
+	font-size: 14px;
+}
+.contacts .location,
+.contacts .emails{
+	margin-top: 30px;
+}
+.contacts .phones,
+.contacts .location,
+.contacts .emails{
+	padding-left: 40px;
+	position: relative;
+
+}
+.contacts .fa{
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 22px;
+}
+.contacts a{
+	color: #ffffff;
+	text-decoration: none;
+
+}
+.contacts a:hover{
+	text-decoration: underline;
 }
