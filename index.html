@@ -59,14 +59,14 @@
 						<div class="contacts">
 							<div class="phones">
 								<i class="fa fa-phone"></i>
-								(912) 555-1234 <br/>
-								(912) 555-5678
+								<span class="phone">(912) 555-1234</span>
+								<span class="phone">(912) 555-5678</span>
 							</div>
 							<address class="location">
 								<i class="fa fa-map-marker"></i>
-								1600 Pennsylvania<br/>
-								Ave NW, Washington<br/>
-								DC 20500, USA
+								<span class="address">1600 Pennsylvania</span>
+								<span class="address">Ave NW, Washington</span>
+								<span class="address">DC 20500, USA</span>
 							</address>
 							<div class="emails">
 								<i class="fa fa-envelope"></i>
@@ -78,9 +78,11 @@
 					</div>
 
 					<div class="col-1-2">
-						<ul class="categories">
+
+						<!--<div >-->
+							<ul class="categories">
 							<li>
-								<a href="#">Tech</a>
+								<a href="#" class="sub-cat-name">Tech<i class="fa fa-chevron-circle-right"></i></a>
 								<ul class="sub-categories">
 									<li><a href="#">Software & Apps</a></li>
 									<li><a href="#">Gadgets</a></li>
@@ -88,7 +90,16 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">Tech</a>
+								<a href="#" class="sub-cat-name">Tech<i class="fa fa-chevron-circle-right"></i></a>
+								<ul class="sub-categories">
+									<li><a href="#">Software & Apps</a></li>
+									<li><a href="#">Gadgets</a></li>
+									<li><a href="#">Mobile</a></li>
+									<li><a href="#">Mobile</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="sub-cat-name">Tech<i class="fa fa-chevron-circle-right"></i></a>
 								<ul class="sub-categories">
 									<li><a href="#">Software & Apps</a></li>
 									<li><a href="#">Gadgets</a></li>
@@ -96,15 +107,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">Tech</a>
-								<ul class="sub-categories">
-									<li><a href="#">Software & Apps</a></li>
-									<li><a href="#">Gadgets</a></li>
-									<li><a href="#">Mobile</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Tech</a>
+								<a href="#" class="sub-cat-name">Tech<i class="fa fa-chevron-circle-right"></i></a>
 								<ul class="sub-categories">
 									<li><a href="#">Software & Apps</a></li>
 									<li><a href="#">Gadgets</a></li>
@@ -112,6 +115,7 @@
 								</ul>
 							</li>
 						</ul>
+						<!--</div>-->
 
 					</div>
 
@@ -120,7 +124,43 @@
 			</div> <!-- .col-1-2 -->
 
 			<div class="col-1-2">
-				<div class="box">
+				<div class="grid">
+					<div class="col-1-2">
+						<ul class="visit-socials">
+							<li><a href="#"><span class="circle"><i class="fa fa-facebook"></i></span>Facebook</a></li>
+							<li><a href="#"><span class="circle"><i class="fa fa-twitter"></i></span>Twitter</a></li>
+							<li><a href="#"><span class="circle"><i class="fa fa-google-plus"></i></span>Google+</a></li>
+							<li><a href="#"><span class="circle"><i class="fa fa-rss"></i></span>Rss Feed</a></li>
+							<li><a href="#"><span class="circle"><i class="fa fa-pinterest"></i></span>Pinterest</a></li>
+						</ul>
+					</div>
+					<div class="col-1-2 row">
+						<div><a href="#"
+								class="subscribe fb cf row"><i class="fa fa-facebook"></i><span class="count">156K</span><span class="follow">Follow <span class="circle-plus"><i class="fa fa-plus-circle"></i></i></span></span></a></div>
+						<div><a href="#" class="subscribe tw cf"><i class="fa fa-twitter"></i><span class="count">89K</span><span class="follow">Following <i class="fa fa-check-circle"></i></span></a></div>
+					</div>
+					<div class="col-1-1">
+						<div class="sing-in row">
+							<h4 class="caption">Sing-In</h4>
+							<p>Just select your favorite social network to get started</p>
+							<ul class="social-icons">
+								<li><a href="#"><span class="circle fb"><i class="fa fa-facebook"></i></span></a></li>
+								<li><a href="#"><span class="circle tw"><i class="fa fa-twitter"></i></span></a></li>
+								<li><a href="#"><span class="circle gp"><i class="fa fa-google-plus"></i></span></a></li>
+								<li><a href="#"><span class="circle in"><i class="fa fa-linkedin"></i></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-1-1">
+						<div class="newsletter">
+							<h4 class="caption">Join the Newsletter</h4>
+							<p>Sign up for our personalized daily newsletter</p>
+							<form action="" class="sing-up-form">
+								<input type="text" placeholder="Enter email address"/>
+								<button type="submit">SING UP</button>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
