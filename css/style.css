@@ -110,6 +110,7 @@ a, a .fa, li, .circle {
 	top: 0;
 	left: 100%;
 	transform: translateY(-60px);
+
 }
 .main-menu .dropdown li{
 	float:none;
